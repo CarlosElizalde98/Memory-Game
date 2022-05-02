@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "clicked": false,
+        "name": "Ion",
+        "image": "https://static.wikia.nocookie.net/titanfall_gamepedia/images/1/1a/Ion_titan.png/revision/latest/scale-to-width-down/316?cb=20160613153212",
+        "type": "Titan"
+    },
+    {
+        "id": 2,
+        "clicked": false,
+        "name": "Tone",
+        "image": "https://static.wikia.nocookie.net/titanfall_gamepedia/images/b/bf/Tone_image.png/revision/latest/scale-to-width-down/316?cb=20160902183404",
+        "type": "Titan"
+    },
+    {
+        "id": 3,
+        "clicked": false,
+        "name": "Scorch",
+        "image": "https://static.wikia.nocookie.net/titanfall_gamepedia/images/a/ad/Scorch_titan.png/revision/latest/scale-to-width-down/316?cb=20160613153219",
+        "type": "Titan"
+    },
+    {
+        "id": 4,
+        "clicked": false,
+        "name": "Legion",
+        "image": "https://static.wikia.nocookie.net/titanfall_gamepedia/images/b/b0/Legion_image.png/revision/latest/scale-to-width-down/316?cb=20160902183357",
+        "type": "Titan"
+    },
+    {
+        "id": 5,
+        "clicked": false,
+        "name": "Northstar",
+        "image": "https://static.wikia.nocookie.net/titanfall_gamepedia/images/7/7d/Northstar_Titan_Image.png/revision/latest/scale-to-width-down/316?cb=20160902182332",
+        "type": "Titan"
+    },
+    {
+        "id": 6,
+        "clicked": false,
+        "name": "Ronin",
+        "image": "https://static.wikia.nocookie.net/titanfall_gamepedia/images/d/d4/Ronin_titan_image.png/revision/latest/scale-to-width-down/316?cb=20160616173614",
+        "type": "Titan"
+    },
+    {
+        "id": 7,
+        "clicked": false,
+        "name": "Monarch",
+        "image": "https://static.wikia.nocookie.net/titanfall_gamepedia/images/2/26/Monarch.jpg/revision/latest/scale-to-width-down/316?cb=20180409094831",
+        "type": "Titan"
+    },
+    {
+        "id": 8,
+        "clicked": false,
+        "name": "Jack Cooper",
+        "image": "https://static.wikia.nocookie.net/titanfall_gamepedia/images/8/85/Jack_cooper_bio_image.png/revision/latest/scale-to-width-down/316?cb=20161013160123",
+        "type": "pilot"
+    },
+    {
+        "id": 9,
+        "clicked": false,
+        "name": "BT-7274",
+        "image": "https://static.wikia.nocookie.net/titanfall_gamepedia/images/4/4c/Bt_bio_image.png/revision/latest/scale-to-width-down/316?cb=20161013160139",
+        "type": "Titan"
+    },
+    {
+        "id": 10,
+        "clicked": false,
+        "name": "Tai Lastimosa",
+        "image": "https://static.wikia.nocookie.net/titanfall_gamepedia/images/2/27/Lastimosa_bio_image.png/revision/latest/scale-to-width-down/316?cb=20161013160427",
+        "type": "Pilot"
+    },
+    {
+        "id": 11,
+        "clicked": false,
+        "name": "Kuben Blisk",
+        "image": "https://static.wikia.nocookie.net/titanfall_gamepedia/images/e/ed/Kuben_blisk_bio_image.png/revision/latest/scale-to-width-down/316?cb=20161013160410",
+        "type": "Pilot"
+    },
+    {
+        "id": 12,
+        "clicked": false,
+        "name": "Sarah Briggs",
+        "image": "https://static.wikia.nocookie.net/titanfall_gamepedia/images/3/39/Sara_bio_image.png/revision/latest/scale-to-width-down/316?cb=20161013160302",
+        "type": "Pilot"
+    }
+]
