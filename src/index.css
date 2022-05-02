@@ -1,13 +1,36 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+  --header-primary: #00bfff;
+  --header-secondary: #476b6b;
+}
+body, * {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+  background-color: var(--header-primary);
+}
+
+.navbar-header {
+  font-family: 'Bebas Neue', cursive;
+  font-weight: bold;
+  font-size: 3rem; 
+  color: var(--header-secondary);
+}
+
+.navbar-desc {
+  font-size: 1.5rem;
+}
+
+.scores{
+  margin-left: auto;
+  margin-right: 2%;
+  font-family: 'Bebas Neue', cursive;
 }
