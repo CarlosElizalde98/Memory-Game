@@ -1,9 +1,12 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import Navbar from "./components/Navbar.js";
+import CharacterCard from "./components/CharacterCard.js";
+import characters from "./characters.json"
 
 
 function App() {
-  const [characters, setCharacters] = useState()
+  
+  const [cards, setCards] = useState(characters)
   const [highScore, setHighScore] = useState(0)
   const [currentScore, setCurrentScore] = useState(0)
   const [clicked, setClicked] = useState(false)
@@ -14,46 +17,58 @@ function App() {
   }
 
   const handleScore = (id) => {
-    characters.forEach(character => {
-      if (id === character.id && character.clicked === false) {
-        character.clicked = true;
+    Object.values(cards).forEach(card => {
+      if (id === card.id && card.clicked === false) {
+        card.clicked = true;
         setClicked(false)
-      } else if(id === character.id && character.clicked === true) {
+      } else if(id === card.id && card.clicked === true) {
         if(currentScore > highScore) {
           setHighScore(currentScore)
         }
         setCurrentScore(0);
         setClicked(true);
-        characters.forEach(character => character.clicked = false);
+        Object.values(cards).forEach(card => card.clicked = false);
       }
     })
   }
 
   const shuffleCharacters = () => {
-    const shuffled = shuffle(characters)
-    setCharacters({shuffled})
+    const deck = [...cards]
+    const shuffled = shuffle(deck)
+    setCards(shuffled)
   }
 
   const shuffle = (array) => {
-    let currentIndex = array.length;
-    let temporaryValue = 0;
-    let randomIndex = 0;
     let newArray = array;
 
-    while (0 !== currentIndex){
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
-
-      temporaryValue = newArray[currentIndex];
-      newArray[currentIndex] = newArray[randomIndex];
-      newArray[randomIndex] = temporaryValue;
-    }
+    newArray = newArray
+    .map(value => ({ value, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .map(({ value }) =>  value)
 
     return newArray;
   }
+
+  const renderItems = (props) => {
+    const items = props
+    let displays = Object.values(items).map((item) => 
+      <CharacterCard
+      handleClick={handleClick}
+      id={item.id}
+      key={item.id}
+      name={item.name}
+      image={item.image}
+      type={item.type}
+    />
+    )
+    
+    return displays
+}
   return (
-    <div>
+
+    <div className='game-container'>
       <Navbar score={currentScore} highScore={highScore}/>
+      <div id='game'>{renderItems(cards)}</div>
     </div>
   );
 
