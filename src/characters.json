@@ -1,9 +1,10 @@
+
 [
     {
         "id": 1,
         "clicked": false,
         "name": "Ion",
-        "image": "https://static.wikia.nocookie.net/titanfall_gamepedia/images/1/1a/Ion_titan.png/revision/latest/scale-to-width-down/316?cb=20160613153212",
+        "image": "./src/components/images/Ion_titan.webp",
         "type": "Titan"
     },
     {
