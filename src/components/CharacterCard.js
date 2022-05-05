@@ -3,7 +3,7 @@ import React from "react";
 const CharacterCard = ({handleClick, id, name, image, type}) => {
     
     return (
-        <div className="card" onClick={(e) => handleClick(e.target.id)}>
+        <div className="card" onClick={() => {handleClick(id)}}>
             <div className="img-container">
                 <img alt={name} src={image} />
             </div>

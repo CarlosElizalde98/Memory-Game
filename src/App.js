@@ -111,20 +111,22 @@ function App() {
   const handleClick = (id) => {
     shuffleCharacters()
     handleScore(id)
+
   }
 
   const handleScore = (id) => {
     Object.values(cards).forEach(card => {
       if (id === card.id && card.clicked === false) {
         card.clicked = true;
+        setCurrentScore(currentScore + 1)
         setClicked(false)
       } else if(id === card.id && card.clicked === true) {
         if(currentScore > highScore) {
           setHighScore(currentScore)
+          setCurrentScore(0);
         }
-        setCurrentScore(0);
         setClicked(true);
-        Object.values(cards).forEach(card => card.clicked = false);
+        
       }
     })
   }
@@ -161,6 +163,7 @@ function App() {
     
     return displays
 }
+ 
   return (
 
     <div className='game-container'>
