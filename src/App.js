@@ -111,21 +111,23 @@ function App() {
   const handleClick = (id) => {
     shuffleCharacters()
     handleScore(id)
-
   }
 
   const handleScore = (id) => {
+    console.log(id)
     Object.values(cards).forEach(card => {
       if (id === card.id && card.clicked === false) {
         card.clicked = true;
         setCurrentScore(currentScore + 1)
-        setClicked(false)
+        console.log(cards)
+       
       } else if(id === card.id && card.clicked === true) {
         if(currentScore > highScore) {
           setHighScore(currentScore)
           setCurrentScore(0);
         }
-        setClicked(true);
+        setCurrentScore(0)
+        Object.values(cards).forEach(card => card.clicked = false)
         
       }
     })
